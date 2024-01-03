@@ -23,9 +23,16 @@ public class Ejemplo01 {
         //String miCiudad = obtenerCiudadMayuscula("Loja");
         //System.out.printf("%s\n", miCiudad);
         obtenerMultiplicacion(7, 50);
-        
+        //Este es un PROCEDIMIENTO en donde se declara los valores a usar para 
+        //luego elaborar el procedimiento por apartado en donde se realizan 
+        //todas las acciones y en donde ya se muestra el resultado y por ende es
+        //enviado al metodo principal.
         String miMensaje = obtenerMultiplicacionDos(7, 50);
         System.out.printf("%s\n",miMensaje);
+        //Este es una FUNCION que de igual forma declara los valores a procesar
+        //Para luego realizar todo el procedimiento por apartado con la 
+        //diferencia de que obtenemos el resultado pero debemos presentar dicho
+        //resultado en el metodo principal con un PRINT.
     }
     
     public static String obtenerMultiplicacionDos(int tabla, int limite) {

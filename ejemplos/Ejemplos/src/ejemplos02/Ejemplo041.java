@@ -23,7 +23,7 @@ public class Ejemplo041 {
                         arreglo2[f][c]);
                 /*
                 Utilizo estos ciclos for para poder recorrer y declarar los 
-                valores que voy a usar para utilizar la funcion de arreglo3
+                valores que voy a usar para la funcion de arreglo3
                 */
             }
         }
@@ -60,6 +60,9 @@ public class Ejemplo041 {
         int operacion;
         operacion = a * b;
         return operacion;
+        /*
+            FUNCION implementada para hacer la multiplicacion de las matrices 
+        */
     }
 
 }

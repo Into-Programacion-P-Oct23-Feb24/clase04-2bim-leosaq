@@ -16,7 +16,8 @@ public class Ejemplo042 {
         int[][] arreglo1 = {{1, 2, 3}, {3, 2, 4}, {2, 6, 2}};
         int[][] arreglo2 = {{1, 2, 3}, {2, 2, 2}, {3, 1, 2}};
         int[][] arreglo3 = new int[3][3];
-        int[][] arreglo4 = new int[3][3];
+        int[][] arreglo4 = new int[3][3]; // Agrego otra variable para agregar 
+                                          // la matriz que se va a sumar 
 
         for (int i = 0; i < arreglo1.length; i++) {
             for (int j = 0; j < arreglo1[i].length; j++) {
@@ -29,19 +30,30 @@ public class Ejemplo042 {
             for (int j = 0; j < arreglo1[i].length; j++) {
                 arreglo4[i][j] = obtenerSuma(arreglo1[i][j],
                         arreglo2[i][j],arreglo3[i][j]);
+                
+                /*
+                Agregue dos ciclos for para recorrer el arreglo que va a 
+                obtener los datos de la suma es decir queden guardados en 
+                arreglo4
+                */
             }
         }
 
         obtenerReporte(arreglo1);
         obtenerReporte(arreglo2);
         obtenerReporte(arreglo3);
-        obtenerReporte(arreglo4);
+        obtenerReporte(arreglo4); //Agrego PROCEDIMIENTO que va llama
+                                         // a su procedimiento y presenta en 
+                                         //pantalla
     }
     
     public static int obtenerSuma(int a, int b, int c) {
         int operacion;
         operacion = a + b + c;
         return operacion;
+        /*
+        Creo un nuevo PROCEDIMIENTO que haga la operacion de suma de los 3 arreglos
+        */
 
     }
     

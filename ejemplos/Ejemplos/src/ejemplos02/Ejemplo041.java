@@ -16,21 +16,50 @@ public class Ejemplo041 {
         int[][] arreglo1 = {{1, 2, 3}, {3, 2, 4}, {2, 6, 2}};
         int[][] arreglo2 = {{1, 2, 3}, {2, 2, 2}, {3, 1, 2}};
         int[][] arreglo3 = new int[3][3];
-
-        for (int i = 0; i < arreglo1.length; i++) {
-            for (int j = 0; j < arreglo1[i].length; j++) {
-                arreglo3[i][j] = obtenerMultiplicacion(arreglo1[i][j], arreglo2[i][j]);
+        
+        for (int f = 0; f < arreglo1.length; f++) {
+            for (int c = 0; c < arreglo1[f].length; c++) {
+                arreglo3[f][c] = obtenerMultiplicacion(arreglo1[f][c],
+                        arreglo2[f][c]);
+                /*
+                Utilizo estos ciclos for para poder recorrer y declarar los 
+                valores que voy a usar para utilizar la funcion de arreglo3
+                */
             }
         }
-        System.out.println(arreglo1);
-        System.out.println(arreglo2);
+        for (int f = 0; f < arreglo1.length; f++) {
+            for (int c = 0; c < arreglo1.length; c++) {
+                System.out.printf("%s\t",arreglo1[f][c]);
+                /*
+                Utilizo los ciclos for para recorrer la matriz y asi poder 
+                presentarla, uso \t que equivale a un TAB de teclado y con ello
+                puedo presentar de forma visual las 3 columnas | | |
+                */
+            }
+            System.out.println("");
+            //Uso este print para 
+        }
+        System.out.println("\n");
+        for (int f = 0; f < arreglo2.length; f++) {
+            for (int c = 0; c < arreglo2.length; c++) {
+                System.out.printf("%s\t", arreglo2[f][c]);
+            }
+            System.out.println("");
+        }
+        System.out.println("\nEl resultado de la multiplicacion es:\n");
+        for (int f = 0; f < arreglo3.length; f++) {
+            for (int c = 0; c < arreglo3.length; c++) {
+                System.out.printf("%s\t", arreglo3[f][c]);
+            }
+            System.out.println("");
+        }
+
     }
 
     public static int obtenerMultiplicacion(int a, int b) {
         int operacion;
         operacion = a * b;
         return operacion;
-
     }
 
 }
